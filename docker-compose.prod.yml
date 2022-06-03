@@ -1,0 +1,27 @@
+version: '3.4'
+
+services:
+  db:
+    image: postgres:13.0-alpine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=formula1_championship
+      - POSTGRES_PASSWORD=formula1
+      - POSTGRES_DB=dev
+  web:
+    depends_on:
+      - db
+    build: 
+      context: ./app
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./app:/home/app/web
+    ports:
+      - 8000:8000
+      - 3000:3000
+    env_file:
+      - ./.env.dev
+
+volumes:
+  postgres_data:
