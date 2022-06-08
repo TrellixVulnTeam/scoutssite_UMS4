@@ -3,5 +3,5 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("Hey Tijl ge ziet er weer zo goed uit vandaag ;)")
+    return HttpResponse("Work in progress!!!!")
 # Create your views here.
