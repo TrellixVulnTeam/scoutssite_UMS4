@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+// Set brand colors
+$green: #98a212;
+
+// Update Bulma vars
+$primary: $green;
+
+//import from bulma
+@import "../node_modules/bulma/bulma.sass";

@@ -6,8 +6,8 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     environment:
-      - POSTGRES_USER=formula1_championship
-      - POSTGRES_PASSWORD=formula1
+      - POSTGRES_USER=Jelle
+      - POSTGRES_PASSWORD=test123
       - POSTGRES_DB=dev
   web:
     depends_on:
