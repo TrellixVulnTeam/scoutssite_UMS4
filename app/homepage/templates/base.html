@@ -13,12 +13,81 @@
     <title>Sint-Johannes</title>
 </head>
 <body>
-    <section class="hero is-small is-primary mb-4">
-        <div class="hero-body">
-            <h1 class="title is-1">Sint-Johannes</h1>
-        </div>
-    </section>
+    <nav class="navbar mt-2" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item">
+            <p class="title is-primary has-text-primary is-family-secondary mb-1">Sint-Johannes</p>
 
+          </a>
+
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+          <hr class="navbar-divider">
+      
+        
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item">
+              Home
+            </a>
+      
+            <a class="navbar-item">
+              Documentation
+            </a>
+
+            <a class="navbar-item">
+              Handboek
+            </a>
+      
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                More
+              </a>
+      
+              <div class="navbar-dropdown">
+                <a class="navbar-item">
+                  About
+                </a>
+                <a class="navbar-item">
+                  Jobs
+                </a>
+                <a class="navbar-item">
+                  Contact
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item">
+                  Report an issue
+                </a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="navbar-end">  
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-primary">
+                  <strong>Sign up</strong>
+                </a>
+                <a class="button is-light">
+                  Log in
+                </a>
+              </div>
+            </div>
+            
+          </div>
+          
+        </div>
+        
+        
+      </nav>
+      <hr class="navbar-divider is-flex-touch">
+    
+    
     <div class="container">
         <div class="columns">
 
@@ -28,5 +97,9 @@
 
         </div>
     </div>
+  <form class="container" action="base.html" method="post">
+    {{form.media}}
+    {{form.as_p}}
+  </form>
 </body>
 </html>

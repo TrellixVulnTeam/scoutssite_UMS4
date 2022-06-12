@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'homepage.apps.HomepageConfig',
 
     'sass_processor',
+
+    'django_quill'
 ]
 
 MIDDLEWARE = [

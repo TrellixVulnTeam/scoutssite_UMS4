@@ -3,3 +3,4 @@ psycopg2>=2.8
 libsass
 django-compressor
 django-sass-processor
+django-quill-editor
